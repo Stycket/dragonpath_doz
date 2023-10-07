@@ -125,7 +125,7 @@ const handleSubmit = async (prompt) => {
 const sendToGPTAPI = async (prompt, messageDiv) => {
   const data = { prompt }
 
-  const response = await fetch('http://localhost:5000', {
+  const response = await fetch('https://dragonpath-doz.onrender.com', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json',
