@@ -5,19 +5,8 @@ import express from 'express'
 import * as dotenv from 'dotenv'
 import cors from 'cors'
 import { Configuration, OpenAIApi } from 'openai'
-import { Client } from '@elastic/elasticsearch'
-import config from 'config'
-const elasticConfig = config.get('elastic');
 
-const client = new Client({
-  cloud: {
-    id: elasticConfig.cloudID
-  },
-  auth: {
-    username: elasticConfig.username,
-    password: elasticConfig.password
-  }
-})
+import config from 'config'
 
 
 import fs from 'fs';
