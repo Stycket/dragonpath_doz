@@ -163,19 +163,19 @@ app.post('/', async (req, res) => {
 
 
       
- //  const imageResponse = await openai.createImage({
-  //     prompt: imagePrompt + randomWord,
-   //    n: numberOfImages,
-   //    size: imageSize,
-   //   })
-  //    .then((data) => {
- //      const imageData = data.data.data;
-//   const urls = imageData.map(obj => obj.url);
-//  const urlsString = urls.join(","); // Change the delimiter as needed
- // console.log(urlsString);
-//  imageURL = urlsString;
+   const imageResponse = await openai.createImage({
+       prompt: imagePrompt + randomWord,
+       n: numberOfImages,
+       size: imageSize,
+      })
+      .then((data) => {
+       const imageData = data.data.data;
+   const urls = imageData.map(obj => obj.url);
+  const urlsString = urls.join(","); // Change the delimiter as needed
+  console.log(urlsString);
+  imageURL = urlsString;
   
-   //     });
+        });
 
 
 
