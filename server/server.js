@@ -6,7 +6,7 @@ import * as dotenv from 'dotenv'
 import cors from 'cors'
 import { Configuration, OpenAIApi } from 'openai'
 
-import config from 'config'
+
 
 
 import fs from 'fs';
