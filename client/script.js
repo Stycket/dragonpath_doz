@@ -125,7 +125,7 @@ const handleSubmit = async (prompt) => {
 const sendToGPTAPI = async (prompt, messageDiv) => {
   const data = { prompt }
 
-  const response = await fetch('https://dragonpathdoz.grabobastu.se/game', {
+  const response = await fetch('https://dragonpathdoz.grabobastu.se/', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json',
